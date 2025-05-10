@@ -1,0 +1,5 @@
+pandas
+schedule
+matplotlib
+pytest==7.4.0
+pytest==7.4.0
