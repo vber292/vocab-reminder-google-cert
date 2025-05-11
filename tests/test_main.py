@@ -5,9 +5,12 @@ import os
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, project_root)
 
-from main import VocabReminder
+from src.vocab_reminder_google_cert.main import VocabReminder
 import unittest
-
+# tests/test_main.py
+def test_vocab_reminder():
+    reminder = VocabReminder()
+    assert reminder is not None
 class TestVocabReminder(unittest.TestCase):
     def test_db(self):
         vr = VocabReminder()
